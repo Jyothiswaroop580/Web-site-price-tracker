@@ -14,7 +14,8 @@ price = soup.find(id="priceblock_dealprice").get_text()
 temp = price[2:4]
 temp1 = price[5:8]
 converted_price = int(temp+temp1)
-print(converted_price)
+print(title.strip())
+print("Price is :₹",converted_price)
 if(converted_price > 24998):
     print("Price has been droped \n")
     print(URL+"\n")
